@@ -79,8 +79,8 @@
 
             <span class="login100-form-title p-b-34 p-t-27"> REGISTER </span>
 
-            {% is errors %}
-            {% for item in errors%}
+            {% if errors %}
+            {% for item in errors %}
             <p class="text text-danger bg-white rounded">{{ item }}</p>
             {% endfor %}
             {% endif %}
